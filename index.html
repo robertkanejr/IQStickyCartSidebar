@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Sticky Cart Sidebar</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Article</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="wrapper">
+			<main>
+				<h1>Welcome to Fruit Store!!</h1>
+				<div class="item">
+					<img src="./images/dragon.jpeg" alt="Dragon Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Dragon Fruit</h4>
+						<p class="itemPrice">Price: $2.50</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./images/banana.jpeg" alt="Banana Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Banana</h4>
+						<p class="itemPrice">Price: $1.22</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./images/apple.jpeg" alt="Apple Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Apple</h4>
+						<p class="itemPrice">Price: $5.00</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./images/orange.jpeg" alt="Orange Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Orange</h4>
+						<p class="itemPrice">Price: $1.50</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./images/pomegranate.jpeg" alt="Pomegranate Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Pomegranate</h4>
+						<p class="itemPrice">Price: $2.50</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./images/mango.jpeg" alt="Mango Image" class="fruitImg" />
+					<div class="itemText">
+						<h4 class="itemName">Mango</h4>
+						<p class="itemPrice">Price: $2.50</p>
+						<button class="addToCartBtn">Add to Cart</button>
+					</div>
+				</div>
+			</main>
+
+			<div id="cart">
+				<h2>Cart</h2>
+				<div class="cartItem">
+					<p class="cartItemId"></p>
+					<p class="cartItemName"></p>
+					<div class="quantityContainer">
+						<p class="itemQuantity"></p>
+					</div>
+					<button class="deleteBtn">&times;</button>
+				</div>
+				<p id="totalText">Total: <span id="totalPrice">$0.00</span></p>
+				<button id="checkoutBtn">Checkout</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!-- Notes -->
+<!-- cart is sticky
+overflow from main has no impact on position of cart
+Add to cart btn gets: item id, name, quantity, price, delete btn,
+total gets updated with sum of all item prices in cart
+checkout btn: prints final cart item list with item id, name, quantity and unit price; also clears Cart
+checkout btn and total should always be shown on viewport; only list show overflow -->

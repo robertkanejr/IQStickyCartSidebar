@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(211, 237, 254);
+	margin: 0;
+}
+
+nav {
+	background-color: rgb(132, 199, 244);
+	width: 100%;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	color: rgb(19, 23, 29);
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+nav li a:hover {
+	color: rgba(33, 35, 43, 0.605);
+}
+
+#wrapper {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+main {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+main h1 {
+	text-align: center;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	margin: 15px 10px;
+}
+
+.fruitImg {
+	width: 150px;
+	height: 150px;
+	border: 5px solid lightgray;
+	border-radius: 5px;
+}
+
+.itemText {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: lightgray;
+	border-radius: 3px;
+	width: 90%;
+	margin-left: 2px;
+	height: 150px;
+}
+
+.addToCartBtn {
+	padding: 10px 20px;
+	border: none;
+	background-color: rgb(190, 242, 285);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#cart {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20vw;
+	height: 35vh;
+	border: 2px solid black;
+	border-radius: 3px;
+	text-align: center;
+	position: sticky;
+	top: 20px;
+}
+
+#cart h3 {
+	background-color: white;
+	margin: 0;
+	padding: 15px;
+}
+.cartItem {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.deleteBtn {
+	background-color: transparent;
+	border: none;
+	font-size: 26px;
+}
+
+#totalText {
+	background-color: white;
+	margin: 0;
+	padding: 15px;
+	/* position: relative;
+	top: 50px; */
+}
+
+#checkoutBtn {
+	background-color: rgb(190, 242, 285);
+	border: none;
+	border-top: 1px solid black;
+	padding: 10px;
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	cursor: pointer;
+}
