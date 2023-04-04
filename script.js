@@ -1,28 +1,24 @@
 const addToCartBtns = document.querySelectorAll(".addToCartBtn");
-const cartTotal = document.querySelector("#totalPrice");
+const cartItemsList = document.querySelector(".cartItems");
 const checkoutBtn = document.querySelector("#checkoutBtn");
-const items = document.querySelectorAll(".item");
-const cartItem = document.querySelector(".cartItem");
+const cartTotal = document.querySelector("#total");
 
-// const addToCart = () => {
-//   for(let i=0; i < items.length; i++) {
-//     items[i] = addToCartBtns[i]
-//   }
-// };
+let cartItems = [];
+let itemPresent = false;
 
-addToCartBtns.forEach((btn) =>
-	btn.addEventListener("click", (e) => {
-		cartItem.querySelector(".cartItemId").value = items[btn].id;
-	})
-);
+// addToCartBtns.forEach((btn) =>
+// 	btn.addEventListener("click", (e) => {
+// 		cartItem.querySelector(".cartItemId").value = items[btn].id;
+// 	})
+// );
 
+// const calcTotal = () => {
 
-const calcTotal = () => {
-  cartTotal = 
-}
+// }
 
 const checkout = () => {
-  console.log()
-}
+	console.log("Your Final Cart is:");
+	console.log(cartItems);
+};
 
-checkoutBtn.addEventListener('click', checkout)
+checkoutBtn.addEventListener("click", checkout);

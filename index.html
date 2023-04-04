@@ -24,11 +24,13 @@
 			<main>
 				<h1>Welcome to Fruit Store!!</h1>
 				<div class="item">
-					<img src="./images/dragon.jpeg" alt="Dragon Image" class="fruitImg" />
+					<img src="./images/dragon.jpeg" alt="Dragon Fruit Image" class="fruitImg" />
 					<div class="itemText">
 						<h4 class="itemName">Dragon Fruit</h4>
 						<p class="itemPrice">Price: $2.50</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Dragon Fruit" data-id="item_1" data-price="2.50">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 				<div class="item">
@@ -36,7 +38,9 @@
 					<div class="itemText">
 						<h4 class="itemName">Banana</h4>
 						<p class="itemPrice">Price: $1.22</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Banana" data-id="item_2" data-price="1.22">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 				<div class="item">
@@ -44,7 +48,9 @@
 					<div class="itemText">
 						<h4 class="itemName">Apple</h4>
 						<p class="itemPrice">Price: $5.00</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Apple" data-id="item_3" data-price="5.00">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 				<div class="item">
@@ -52,7 +58,9 @@
 					<div class="itemText">
 						<h4 class="itemName">Orange</h4>
 						<p class="itemPrice">Price: $1.50</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Orange" data-id="item_4" data-price="1.50">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 				<div class="item">
@@ -60,7 +68,9 @@
 					<div class="itemText">
 						<h4 class="itemName">Pomegranate</h4>
 						<p class="itemPrice">Price: $2.50</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Pomegranate" data-id="item_5" data-price="2.50">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 				<div class="item">
@@ -68,22 +78,17 @@
 					<div class="itemText">
 						<h4 class="itemName">Mango</h4>
 						<p class="itemPrice">Price: $2.50</p>
-						<button class="addToCartBtn">Add to Cart</button>
+						<button class="addToCartBtn" data-name="Mango" data-id="item_6" data-price="2.50">
+							Add to Cart
+						</button>
 					</div>
 				</div>
 			</main>
 
 			<div id="cart">
 				<h2>Cart</h2>
-				<div class="cartItem">
-					<p class="cartItemId"></p>
-					<p class="cartItemName"></p>
-					<div class="quantityContainer">
-						<p class="itemQuantity"></p>
-					</div>
-					<button class="deleteBtn">&times;</button>
-				</div>
-				<p id="totalText">Total: <span id="totalPrice">$0.00</span></p>
+				<ul class="cartItems"></ul>
+				<p id="total">Total: $0.00</p>
 				<button id="checkoutBtn">Checkout</button>
 			</div>
 		</div>
